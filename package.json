@@ -1,0 +1,225 @@
+{
+  "name": "pebble-tandoor",
+  "author": "Sylonin",
+  "version": "1.0.0",
+  "description": "Browse your Tandoor recipes on a Pebble Time 2 and cook them step by step, with timers that ring on the watch.",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
+  "pebble": {
+    "displayName": "Tandoor",
+    "uuid": "261a265f-72a5-40a7-911d-1809026156c0",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "configPage": "src/config.html",
+    "usesPermissions": [
+      {
+        "name": "Internet",
+        "reason": "To read recipes from your Tandoor server, which can be at any address",
+        "required": true
+      },
+      {
+        "name": "LocalNetwork",
+        "reason": "To reach a Tandoor server on your home network",
+        "required": false
+      }
+    ],
+    "messageKeys": [
+      "Cmd",
+      "Req",
+      "Kind",
+      "Id",
+      "Page",
+      "Query",
+      "State",
+      "Text",
+      "Data",
+      "Index",
+      "More",
+      "Total",
+      "Done",
+      "Name",
+      "Desc",
+      "Servings",
+      "ServText",
+      "Time1",
+      "Time2",
+      "Rating",
+      "Count",
+      "Sub",
+      "Flags",
+      "Backlight",
+      "Sound"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PLAN",
+          "file": "images/icon_plan.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_SEARCH",
+          "file": "images/icon_search.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RECENT",
+          "file": "images/icon_recent.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_BOOK",
+          "file": "images/icon_book.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_TAG",
+          "file": "images/icon_tag.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_ALL",
+          "file": "images/icon_all.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RANDOM",
+          "file": "images/icon_random.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_TIMER",
+          "file": "images/icon_timer.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RESUME",
+          "file": "images/icon_resume.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CHEVRON",
+          "file": "images/icon_chevron.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CLOCK",
+          "file": "images/icon_clock.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_USERS",
+          "file": "images/icon_users.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PLAY",
+          "file": "images/icon_play.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CHECK_ON",
+          "file": "images/icon_check_on.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CHECK_OFF",
+          "file": "images/icon_check_off.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PAUSE",
+          "file": "images/icon_pause.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PLAY_SMALL",
+          "file": "images/icon_play_small.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PLUS",
+          "file": "images/icon_plus.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_DISMISS",
+          "file": "images/icon_dismiss.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_STEP",
+          "file": "images/icon_step.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_BELL",
+          "file": "images/icon_bell.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_DONE",
+          "file": "images/icon_done.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_SETUP",
+          "file": "images/icon_setup.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_OFFLINE",
+          "file": "images/icon_offline.png",
+          "memoryFormat": "2BitPalette"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_EMPTY",
+          "file": "images/icon_empty.png",
+          "memoryFormat": "2BitPalette"
+        }
+      ]
+    }
+  }
+}
