@@ -14,6 +14,7 @@ It targets emery (Pebble Time 2) only: it uses the speaker, the 200×228 layout 
 | `src/config.html` | bundled settings page | One file with inline script. Talks to PKJS through `Pebble.sendMessage('pkjs', …)`. |
 | `test/` | Node | Tests of `tandoor.js`. |
 | `tools/mock-tandoor/` | Python | A fake Tandoor server with fixture recipes, for the emulator. |
+| `docs/screenshots/` | | README screenshots (`pebble screenshot --scale 2`) taken in the emulator against the mock server, never a real account. Retake the affected ones after a visible UI change; `oxipng -o max --strip safe` them. |
 | `resources/icons/` | | SVG sources of the icons. `icons` (devenv script, runs `tools/icons.sh`) renders them to `resources/images/` and `appstore/`. |
 | `devenv.nix`, `devenv.yaml`, `.envrc` | | Dev shell: Node.js, pebble-tool, the emulator's libraries, linters, git hooks, the icon renderer. |
 | `.clang-tidy`, `biome.json` | | Linter settings for the C and the JS, HTML and CSS. |

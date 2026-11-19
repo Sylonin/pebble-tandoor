@@ -3,6 +3,7 @@
   "author": "Sylonin",
   "version": "1.0.0",
   "description": "Browse your Tandoor recipes on a Pebble Time 2 and cook them step by step, with timers that ring on the watch.",
+  "license": "GPL-3.0-or-later",
   "keywords": [
     "pebble-app"
   ],

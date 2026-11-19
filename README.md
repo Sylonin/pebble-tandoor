@@ -2,6 +2,17 @@
 
 A Pebble Time 2 app for [Tandoor](https://tandoor.dev), the self-hosted recipe manager. Browse your recipes on the watch, then cook one step by step, with timers that ring on your wrist.
 
+<p>
+  <img src="docs/screenshots/home.png" width="200" alt="Home: continue cooking, two timers running, and the ways to browse">
+  <img src="docs/screenshots/plan.png" width="200" alt="Meal plan for the next seven days">
+  <img src="docs/screenshots/recipe.png" width="200" alt="A recipe: name, time, servings, description and Start cooking">
+  <img src="docs/screenshots/ingredients.png" width="200" alt="The ingredient checklist with one ingredient ticked">
+  <img src="docs/screenshots/step.png" width="200" alt="A cooking step with its two-minute timer and another timer running in the status bar">
+  <img src="docs/screenshots/alert.png" width="200" alt="A timer alert: time's up, with add a minute, dismiss and next step">
+  <img src="docs/screenshots/done.png" width="200" alt="The last page: enjoy your meal, and log the cook in Tandoor">
+  <img src="docs/screenshots/launcher.png" width="200" alt="The watch's app menu showing the next timer counting down">
+</p>
+
 - **Browse** your meal plan for the week, search by voice, or go through recent recipes, books, keywords or all recipes. Surprise me opens a random recipe.
 - **Read a recipe**: its times and servings, an ingredient checklist for your mise en place, and the steps. Change the servings and every amount follows.
 - **Cook** one step at a time in large type, with the step's ingredients below it and a peek at what comes next. Up and Down scroll, then move to the previous or next step.
@@ -17,7 +28,7 @@ A Pebble Time 2 app for [Tandoor](https://tandoor.dev), the self-hosted recipe m
 ## Getting started
 
 1. In Tandoor, open your user menu, then **Settings → API tokens**, and create a token with the scope `read write`. Read is enough to browse and cook; write lets the app log cooks.
-2. Install `pebble-tandoor.pbw`. Allow Internet access; allow local network access too if your server is on your home network.
+2. Install `pebble-tandoor.pbw` (build it as shown under Development): open the file on your phone with the Pebble app, or run `pebble install --phone <phone IP>` with the Pebble app's developer connection turned on. Allow Internet access; allow local network access too if your server is on your home network.
 3. Open Tandoor's settings in the Pebble app. Enter the server address (for example `https://recipes.example.com`) and the token, and press **Save**. The page checks them and shows how many recipes it found.
 4. Open Tandoor on the watch.
 
@@ -62,4 +73,10 @@ pebble install --emulator emery
 
 See `docs/design.md` for how the parts fit together, and `AGENTS.md` for the project's working notes.
 
-Icons are based on [Lucide](https://lucide.dev) (ISC licence). Tandoor for Pebble is not made by the Tandoor project or Core Devices.
+The screenshots come from the emulator and the mock server, whose recipes are made up.
+
+## Licence
+
+Tandoor for Pebble is free software: you can redistribute it and modify it under the terms of the GNU General Public License, version 3 or any later version (see `LICENSE`).
+
+Most icons are based on [Lucide](https://lucide.dev) and keep Lucide's ISC licence, and the MIT licence for icons Lucide took from Feather (see `resources/icons/LICENSE-lucide`). Tandoor for Pebble is not made by the Tandoor project or Core Devices.
