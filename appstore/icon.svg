@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <!-- Tandoor's flame in its brand colours on charcoal. -->
+  <rect width="144" height="144" fill="#161616"/>
+  <path d="M74 12C80 38 116 54 116 92C116 118 97 134 72 134C47 134 28 118 28 92C28 72 40 58 50 48C50 62 56 70 63 72C58 46 62 28 74 12Z" fill="#ff6f00"/>
+  <path d="M72 70C76 84 94 92 94 108C94 120 84 128 72 128C60 128 50 120 50 108C50 98 58 92 64 86C66 92 69 95 72 95C70 88 69 78 72 70Z" fill="#ffd100"/>
+</svg>
