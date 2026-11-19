@@ -1,0 +1,14 @@
+build/
+node_modules/
+.lock-waf*
+*.pyc
+__pycache__/
+# `pebble compile-commands` (lint-c, clangd); holds absolute paths.
+compile_commands.json
+
+# devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+.direnv
+.pre-commit-config.yaml
